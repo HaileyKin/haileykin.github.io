@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.font-crimson {
+    font-family: "Crimson Text", serif;
+}

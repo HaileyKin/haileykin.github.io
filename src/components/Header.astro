@@ -1,14 +1,19 @@
 ---
-import NavLink from "../components/NavLink.astro"
+import NavLink from "../components/NavLink.astro";
+import Banner from "../assets/headerbanner.svg";
 ---
 
-<header class="flex justify-between items-center">
-    <a href="/"><h1 class="text-3xl font-bold hover:text-green-500 transition-all">
+<header class="flex justify-between items-center px-10 py-5 bg-[#CCB39E]">
+  <a href="/"
+    ><h1
+      class="text-4xl font-bold hover:text-green-500 transition-all font-crimson"
+    >
       Hailey's Wall
-    </h1></a>
-    <div class="flex gap-5">
-      <NavLink href="/about">About me</NavLink>
-      <NavLink href="/work">My Work</NavLink>
-      <NavLink href="/gallery">The Art Gallery</NavLink>
-    </div>
-  </header>
+    </h1></a
+  >
+  <div class="flex gap-5 text-lg font-crimson">
+    <NavLink href="/about">About me</NavLink>
+    <NavLink href="/work">My Work</NavLink>
+    <NavLink href="/gallery">The Art Gallery</NavLink>
+  </div>
+</header>
