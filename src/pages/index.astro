@@ -1,15 +1,50 @@
 ---
 import "../styles/global.css";
-import NavLink from "../components/NavLink.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Home">
-  <div class="flex h-full">
-    <div class="bg-green-500 w-1/2 h-full justify-end">
-      <img class="w-full h-auto" src="/Adobe Express - file (17).png" />
+  <div class="flex flex-col 2xl:flex-row h-full">
+    <div class="h-full flex items-center justify-end w-full">
+      <div class="relative my-auto flex items-center justify-center">
+        <img
+          src="gold-frame.png"
+          class="max-h-full max-w-full object-contain z-10"
+          style="aspect-ratio: auto;"
+          alt="Decorative"
+        />
+        <div
+          class="absolute top-[23%] left-[27%] w-[46%] h-[54%] p-[3%] bg-white"
+        >
+          <div class="relative w-full h-full overflow-hidden">
+            <img
+              src="headshot.jpg"
+              class="absolute top-0 right-0 max-h-5/6 transform -translate-y-3 translate-x-2 object-contain"
+              style="aspect-ratio: auto;"
+              alt="Decorative"
+            />
+            <img
+              src="collage.png"
+              class="absolute w-full h-full"
+              alt="Decorative"
+            />
+            <div
+              class="absolute bottom-0 w-full p-7 text-black font-medium text-xl flex flex-col gap-2"
+            >
+              <span
+                >Hey! My names Hailey Kinsella, I'm a UI/UX designer currently
+                completing my Computer Science Degree.</span
+              >
+              <span
+                >I've got lots I want to show you, click any picture frame to
+                start checking things out!</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex flex-col w-1/2 h-full">
+    <div class="flex flex-col w-full h-full">
       <div class="bg-red-500 p-10 w-full h-full">
         <img class="h-full" src="" />
       </div>
