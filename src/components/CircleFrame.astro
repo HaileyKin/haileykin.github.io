@@ -1,31 +1,31 @@
----
-
----
-
-<div
-  class="flex 2xl:justify-start justify-center items-center w-full 2xl:h-full 2xl:px-0 2xl:py-0"
->
+<div class="flex 2xl:justify-start justify-center items-center w-full 2xl:h-full pl-20 2xl:pl-0 2xl:py-0">
   <div class="relative w-full max-w-[640px] 2xl:max-w-[410px]">
+    
+    <!-- Frame -->
     <img
-      src="circle-frame.png"
+      src="circle-frame-shadow.png"
       class="max-h-full max-w-full object-contain z-10 relative"
-      style="aspect-ratio: auto;"
+      alt="Decorative"
+    />
+
+    <!-- Circle above frame -->
+    <img
+      src="circle.png"
+      class="absolute top-[14%] left-[12%] w-[63%] h-[63%] 2xl:w-[70%] 2xl:h-[63%] 2xl:left-[14%] z-20"
+      alt="Decorative"
+    />
+
+    <!-- Square — moved here to be on top of all -->
+    <img
+      src="square.png"
+      class="absolute top-32 left-36 max-h-2/5 2xl:top-23 2xl:left-24.5 transform -translate-y-3 translate-x-2 object-contain z-30"
       alt="Decorative"
     />
     <div class="absolute top-[24%] left-[21%] w-[55%] h-[54%] z-0">
       <div class="relative w-full h-full overflow-hidden">
-        <img
-          src="my-work-words.png"
-          class="absolute top-7 right-10 max-h-2/5 transform -translate-y-3 translate-x-2 object-contain z-1"
-          style="aspect-ratio: auto;"
-          alt="Decorative"
-        />
-        <img
-          src="work-background.png"
-          class="absolute w-full h-full"
-          alt="Decorative"
-        />
       </div>
     </div>
+    
   </div>
 </div>
+
